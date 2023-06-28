@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais fantásticos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Criando a classe js ao HTML -->
+    <script>document.documentElement.className+=' js'</script>
+    
+    <script type="module" src="./js/script.js" defer></script>
+</head>
+<body>
+   
+        <div class="grid-container">
+            <nav class="menu" data-menu="suave">
+                <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
+                <li><a href="#animais">Animais</a></li>
+                <li data-dropdown>
+                    <a href="sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="empresa.html">A empresa</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="socios.html">Socios</a></li>
+                        <li><a href="investidores.html">Investidores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">Faqs</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="abrir" href="login.html">Login  <span class="arrow-black"></span></a></li>
+            </ul>
+            </nav>
+            <section class="grid-section animais" id="animais" data-anime="scroll">
+                <h1 class="titulo">animais <br> fantásticos</h1>
+                <ul class="animais-lista js-tabmenu">
+                    <li><img src="./img/imagem1.jpg" alt="raposa em pé"></li>
+                    <li><img src="./img/imagem2.jpg" alt="coelho"></li>
+                    <li><img src="./img/imagem3.jpg" alt="Urso"></li>
+                    <li><img src="./img/imagem4.jpg" alt="Lobo"></li>
+                    <li><img src="./img/imagem5.jpg" alt="Macaco"></li>
+                    <li><img src="./img/imagem6.jpg" alt="Leão"></li>
+                </ul>
+                <div class="animais-descricao" data-tab="content">
+                    <section data-anime="show-right">
+                        <h2>raposa</h2>
+                        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+                        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+                    </section>
+                    <section data-anime="show-right">
+                        <h2>Esquilo</h2>
+                        <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae. </p>
+                        <p>No Brasil, são também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim, quatipuru, agutipuru ou acutipuru. </p>
+                        <p>Na Galiza e em algumas zonas de Portugal, também são conhecido por esquio.</p>
+                    </section>
+                    <section data-anime="show-down">
+                        <h2>Urso</h2>
+                        <p>Os Ursos constituem uma família de mamíferos carnívoros de grande porte, contendo os ursos e os pandas. </p>
+                        <p>Eles são classificados como caníformes ou carnivoros caninos.</p>
+                        <p> Os ursos são encontrados nos continentes da América do Norte, América do Sul, Europa e Ásia.</p>
+            
+                    </section>
+                    <section data-anime="show-right">
+                        <h2>Lobo</h2>
+                        <p>O lobo é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. </p>
+                        <p>O lobo é um animal carnívoro pertencente à mesma família dos cães domésticos. </p>
+                        <p>O termo lobo geralmente é utilizado para fazer referência ao lobo-cinzento, que apresenta nome científico Canis lupus.</p>
+            
+                    </section>
+                    <section data-anime="show-down">
+                        <h2>Macaco</h2>
+                        <p>Macaco é um termo de origem africana utilizado como designação comum a todas as espécies de símios ou primatas antropoides. </p>
+                        <p>É aplicada restritivamente no Brasil aos cebídeos em geral. </p>
+                        <p>No sentido estrito, "macaco" refere-se às espécies de primatas pertencentes ao género Macaca.</p>
+                    </section>
+                    <section data-anime="show-right">
+                        <h2>Leão</h2>
+                        <p>O leão [feminino: leoa] é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae.  </p>
+                        <p>A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia.</p>
+            
+                    </section>
+                </div>
+            </section>
+            <section class="grid-section faq js-accordion" id="faq" data-anime="scroll">
+                <h1 class="titulo">faq</h1>
+                <dl class="faq-lista">
+                    <dt>Qual a idade dos animais?</dt>
+                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                    <dt>Eles são fantásticos?</dt>
+                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                    <dt>Qual a diferença?</dt>
+                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                    <dt>Como proteger?</dt>
+                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                </dl>
+            </section>
+
+            <section class="grid-section galeria" data-anime="scroll">
+
+                <ul class="custom-controls">
+                    <li><img src="./img/slide/foto1-thumb.jpg" alt="raposa"></li>
+                    <li><img src="./img/slide/foto2-thumb.jpg" alt="esquilo"></li>
+                    <li><img src="./img/slide/foto3-thumb.jpg" alt="urso"></li>
+                    <li><img src="./img/slide/foto4-thumb.jpg" alt="lobo"></li>
+                    <li><img src="./img/slide/foto5-thumb.jpg" alt="macaco"></li>
+                    <li><img src="./img/slide/foto6-thumb.jpg" alt="leao"></li>
+                </ul>
+                <div class="slide-wrapper">
+                    <ul class="slide">
+                        <li><img src="./img/slide/foto1.jpg" alt="raposa"></li>
+                        <li><img src="./img/slide/foto2.jpg" alt="esquilo"></li>
+                        <li><img src="./img/slide/foto3.jpg" alt="urso"></li>
+                        <li><img src="./img/slide/foto4.jpg" alt="lobo"></li>
+                        <li><img src="./img/slide/foto5.jpg" alt="macaco"></li>
+                        <li><img src="./img/slide/foto6.jpg" alt="leao"></li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+
+
+            <section class="grid-section numeros" data-anime="scroll">
+                <h1 class="titulo">Número</h1>
+                <div class="numero-grid">
+                   
+
+                </div>
+                
+            </section>
+            <section class="grid-section contato" id="contato" data-anime="scroll">
+                <h1 class="titulo">Contato</h1>
+                <div class="mapa" data-tooltip="" aria-label="Endereço proximo ao estacionamento">
+                    <img src="./img/mapa.png" alt="mapa">
+                </div>
+                <ul class="dados">
+                    <li>contato@origamid.com</li>
+                    <li>+55 (21) 9999-9999</li>
+                    <li>Rua do Conde, nº 21</li>
+                    <li>Rio de Janeiro - RJ</li>
+                    <li>Doe 0.0075 bitcoin para nos ajudar</li>
+                    <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+                    <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+                </ul>
+            </section>
+            
+            
+               
+            
+                <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+                </footer>
+        </div>
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button class="fechar" data-modal="fechar"></button>
+            <form action="">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+.numero-grid{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.numero-grid h3{
+    font-family: 'Playfair Display', Georgia;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.numero-grid span{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e54;
+}
+@media(max-width:700px){
+
+    .numero-grid{
+        grid-column: 1;
+    }
+
+    .numero-grid span{
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: #e54;
+    }
+    .numero-grid h3{
+        font-size: 1.75rem;
+    }
+}
